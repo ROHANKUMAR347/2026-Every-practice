@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    /* width: 100vw;
+    height: 100vh; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-image: url("https://t4.ftcdn.net/jpg/17/37/65/13/240_F_1737651386_wk2ZZ5cGtRX73vb9eor5GYcvpK9FJSFG.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container {
+    /* width: 80%;
+    margin: 40px; */
+    margin: 50px;
+    padding: 20px;
+    /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+}
+
+.applications {
+    width: 60%;
+    height: auto;
+    padding: 20px;
+    gap: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+   margin-top:10px ;
+}
+
+h1 {
+    font-size: 40px;
+    margin-top: 10px;
+    color: rgb(167, 228, 24);
+}
+
+label {
+    font-size: 25px;
+    font-style: inherit;
+    flex: 1;
+    color: rgb(230, 233, 89);
+    font-weight: 600;
+
+}
+
+input {
+    font-size: 20px;
+    border: 2px solid rgb(217, 241, 108);
+    color: rgb(130, 130, 240);
+    flex: 1;
+   padding: 5px;
+
+    /* border: none; */
+}
+
+select {
+    font-size: 20px;
+    border: 2px solid rgb(217, 241, 108);
+    /* border: none; */
+    color: rgb(130, 130, 240);
+}
+
+textarea {
+    max-height: 60px;
+    max-width: 450px;
+    min-width: 400px;
+    min-height: 50px;
+    font-size: 20px;
+    border: 2px solid rgb(217, 241, 108);
+    /* border: none; */
+    color: rgb(130, 130, 240);
+    padding: 5px;
+}
+
+button {
+    font-size: 25px;
+    padding: 10px;
+    font-weight: bolder;
+    margin-top: 30px;
+    margin-left: 300px;
+    background-color: rgb(173, 241, 63);
+    color: rgb(10, 10, 10);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+
+button:hover {
+    background-color: rgb(56, 43, 235);
+    color: rgb(190, 240, 53);
+    transition: 0.2s;
+}
+@media screen and (max-width:600px){
+    .applications {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px;
+    
+  }
+  label{
+    text-align: left;
+  }
+}

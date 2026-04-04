@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #eaeaea;
+}
+
+/* A4 SIZE */
+@page {
+    size: A4;
+    margin: 0;
+}
+
+.container {
+    width: 210mm;
+    min-height: 297mm;
+    margin: auto;
+    display: flex;
+    background: #fff;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+/* SIDEBAR */
+.sidebar {
+    width: 32%;
+    background: #1e293b;
+    color: #fff;
+    padding: 30px 20px;
+}
+
+.profile-img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 15px;
+    border: 3px solid #fff;
+}
+
+.sidebar h2 {
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 5px;
+}
+
+.sidebar p, .sidebar li {
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+.contact a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* MAIN */
+.main {
+    width: 68%;
+    padding: 30px;
+}
+
+.header h1 {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.header h3 {
+    font-size: 16px;
+    color: #555;
+    margin-top: 5px;
+}
+
+.section {
+    margin-top: 25px;
+}
+
+.section h2 {
+    font-size: 25px;
+    margin-bottom: 10px;
+    color: #1e293b;
+    border-left: 4px solid #1e293b;
+    padding-left: 8px;
+}
+
+.section p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.job, .projects {
+    margin-bottom: 15px;
+}
+
+.projects a {
+    margin-left: 10px;
+    color: #1e293b;
+}
+
+ul {
+    margin-left: 18px;
+}
+
+ul li {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+/* RESPONSIVE */
+@media(max-width: 900px) {
+    .container {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .sidebar, .main {
+        width: 100%;
+    }
+}

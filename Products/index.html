@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <img class="logo"
+                src="data:image/png;base64,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"
+                alt="logo">
+            <input type="search">
+            <button class="login">LOG IN</button>
+
+        </nav>
+        <div class="bigbilion">
+            <h1>Big millions Days</h1>
+            <h2>Offer for limited times</h2>
+        <!-- <div class="img-container"> -->
+            <img class="deals" src="https://rukminim2.flixcart.com/fk-p-flap/1580/770/image/6673956bb80d6d9a.jpg?q=80"
+                alt="">
+            <!-- <img src="https://rukminim2.flixcart.com/fk-p-flap/1620/790/image/3b63eb313715872c.jpg?q=80" alt="">
+            <img src="https://rukminim2.flixcart.com/fk-p-flap/1620/790/image/9b11d36340d0962f.jpg?q=80" alt="">
+            <img src="https://rukminim2.flixcart.com/fk-p-flap/1620/790/image/3adc835e40c12275.png?q=80" alt="">
+        </div> -->
+        </div>
+        <div class="products">
+
+            <div class="product">
+                <img class="image-prd"
+                    src="https://rukminim2.flixcart.com/image/612/612/xif0q/headphone/w/g/c/nb137-dive-upto-60-hours-playtime-type-c-fast-charging-dual-original-imahh5e63zp8fs6g.jpeg?q=70"
+                    alt="product">
+                <p>5,999</p>
+                <button>Buy</button>
+            </div>
+            <div class="product">
+                <img class="image-prd"
+                    src="https://rukminim1.flixcart.com/image/800/1070/xif0q/shoe/i/i/d/8-mirage-8-jqr-wht-original-imahhg572kgymq4q.jpeg?q=80"
+                    alt="product">
+                <p>999</p>
+                <button>Buy</button>
+            </div>
+            <div class="product">
+                <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/watch/d/n/7/-resized-2-original-imahfszdymh6nsdm.jpeg?q=70"
+                    alt="product" class="image-prd">
+                <p>2,999</p>
+                <button>Buy</button>
+            </div>
+            <div class="product">
+                <img src="https://rukminim1.flixcart.com/image/800/1070/xif0q/television/r/9/r/-original-imahffgwfvghz6bb.jpeg?q=80"
+                    alt="product" class="image-prd">
+                <p>11,999</p>
+                <button>Buy</button>
+            </div>
+            <div class="product">
+                <img class="image-prd"
+                    src="https://rukminim2.flixcart.com/image/612/612/xif0q/shirt/q/o/s/xxl-1600-yellow-combraided-original-imahdvvzgrhehekf.jpeg?q=70"
+                    alt="product">
+                <p>5,999</p>
+                <button>Buy</button>
+            </div>
+            <div class="product">
+                <img class="image-prd"
+                    src="https://rukminim2.flixcart.com/image/612/612/k1118cw0/induction-cook-top/k/x/v/lifelong-inferno-llic20-original-imafkp2xh77pkfmp.jpeg?q=70"
+                    alt="product">
+                <p>3,999</p>
+                <button>Buy</button>
+            </div>
+            <div class="product">
+                <img class="image-prd"
+                    src="https://rukminim1.flixcart.com/image/1280/1280/xif0q/mobile/r/r/v/-original-imahjyvx2gzzze2g.jpeg?q=90"
+                    alt="product">
+                <p>54,999</p>
+                <button>Buy</button>
+            </div>
+            <div class="product">
+                <img class="image-prd"
+                    src="https://rukminim2.flixcart.com/image/612/612/xif0q/shirt/l/z/1/11-12-years-multicolur-klok-wear-original-imahhn5ag9vkh52d.jpeg?q=70"
+                    alt="product">
+                <p>2400</p>
+                <button>Buy</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
