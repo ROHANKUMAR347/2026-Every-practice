@@ -1,0 +1,22 @@
+body{
+    margin: 0px;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* .form{
+    display: flex;
+    flex-direction: co;
+} */
+
+.ajad{
+    display: flex;
+    flex-direction: column;
+    
+    gap: 5px;
+}
+.currency{
+    display: flex;
+    align-items: center;
+}
