@@ -7,7 +7,7 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: rgb(0,133,70);
+    background-color: rgb(97,97,97);
 }
 
 /* ================= TOP NAV ================= */
@@ -653,125 +653,50 @@ body {
     }
 }
 
+/* Carausel*/
 
-
-/* ================= COMMON BANNER ================= */
-.banner-bg {
-    border-radius: 10px;
-    overflow: hidden;
-}
-
-.banner-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* FIX: no stretch */
-    transition: transform 0.5s ease;
-}
-
-.banner-img:hover {
-    transform: scale(1.05);
-}
-
-/* ================= SWIPER CONTAINER ================= */
-.swiper-container {
-    width: 100%;
-    height: auto;
-}
-
-.swiper-slide {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-/* ================= DESKTOP BANNER ================= */
-@media (min-width: 768px) {
-
-    /* show desktop banner */
-    .row.d-md-block.d-none {
-        display: block !important;
+  .swiper {
+      width: 100%;
+      height: 400px;
     }
 
-    /* hide mobile banner */
-    .row.d-md-none.d-block {
-        display: none !important;
+    .swiper-slide img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
 
-    .swiper-container {
-        height: 500px;
+    /* Make pagination visible */
+    .swiper-pagination {
+      bottom: 10px !important;
     }
 
-    .banner-img {
-        height: 500px;
-    }
-}
-
-/* ================= MOBILE BANNER ================= */
-@media (max-width: 767px) {
-
-    /* show mobile banner */
-    .row.d-md-none.d-block {
-        display: block !important;
+    .swiper-pagination-bullet {
+      background: white;
+      opacity: 0.7;
     }
 
-    /* hide desktop banner */
-    .row.d-md-block.d-none {
-        display: none !important;
+    .swiper-pagination-bullet-active {
+      background: #008546;
+      opacity: 1;
     }
 
-    .swiper-container {
-        height: 220px;
-    }
-
-    .banner-img {
-        height: 220px;
-    }
-}
-
-/* ================= TABLET VIEW ================= */
-@media (min-width: 768px) and (max-width: 1024px) {
-    .swiper-container {
-        height: 350px;
-    }
-
-    .banner-img {
-        height: 350px;
-    }
-}
-
-/* ================= SWIPER NAVIGATION ================= */
+/* Navigation buttons styling */
 .swiper-button-next,
 .swiper-button-prev {
-    color: #fff;
-    background: rgba(0, 0, 0, 0.4);
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    transition: 0.3s;
+  color: #fff;
 }
 
-.swiper-button-next:hover,
-.swiper-button-prev:hover {
-    background: #008546;
-}
-
-/* ================= PAGINATION ================= */
+/* Pagination bullets */
 .swiper-pagination-bullet {
-    background: #fff;
-    opacity: 0.6;
+  background: #fff;
+  opacity: 0.6;
 }
 
 .swiper-pagination-bullet-active {
-    background: #008546;
-    opacity: 1;
+  background: #008546;
+  opacity: 1;
 }
-
-/* ================= REMOVE INLINE HEIGHT ISSUES ================= */
-.card.banner-bg {
-    height: 100%;
-    padding: 0 !important;
-}
-
 
 
 
@@ -989,7 +914,7 @@ body {
     top: 40%;
     left: 60%;
     transform: translate(-50%, -50%);
-    background: #fff;
+    background: #8feeb7;
     border-radius: 50%;
     width: 110px;
     height: 110px;
@@ -1214,11 +1139,11 @@ body {
 
 
 
-
+/*Educational patner*/
 
 .aboutt {
   padding: 60px 0;
-  background-color: rgb(0,133,70);
+  background-color: #aae9cc ;
 }
 
 /* Title Styling */
@@ -1231,6 +1156,7 @@ body {
 /* Logo container */
 .education_photos {
   gap: 20px;
+  
  
 }
 
@@ -1240,7 +1166,8 @@ body {
   padding: 15px;
   border-radius: 10px;
   transition: all 0.3s ease;
-  height: 100px;
+  
+  width: 100%;
   background-color: white;
 }
 

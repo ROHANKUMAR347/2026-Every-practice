@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f3f3f3;
+  /* display: flex; */
+  /* flex-direction: column; */
+
+}
+
+.top{
+    width: 100vw;
+    height: 40px;
+    background-color: #0d4b45 ;
+}
+
+/* Header */
+.header {
+  background: white;
+  padding: 15px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.logo-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.logo-section img {
+  width: 90px;
+}
+
+.logo-section h1 {
+  font-size: 35px;
+  color: #1f4d3b;
+}
+
+.logo-section p {
+  color: #666;
+}
+
+/* Navbar */
+.navbar {
+  background: #1f6b63;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+.navbar li {
+  padding: 12px 20px;
+  color: white;
+  cursor: pointer;
+}
+
+.navbar li a{
+  padding: 12px 20px;
+  color: white;
+ text-decoration: none;
+}
+
+.navbar li:hover,
+.navbar .active {
+  background: #0d4b45;
+  border-radius: 4px;
+}
+
+/* Cards */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  padding: 40px;
+  justify-items: center;
+ 
+}
+
+.card {
+  width: 220px;
+  height: 150px;
+  background: linear-gradient(135deg, #1f6b63, #2ca89c);
+  border-radius: 12px;
+  box-shadow: 0 5px 12px rgba(0,0,0,0.2);
+  text-align: center;
+  padding: 20px;
+  color: white;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.card img {
+  width: 80px;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 16px;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+/* Footer */
+.footer {
+  background: #0d4b45;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-size: 14px;
+ 
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .logo-section {
+    flex-direction: column;
+  }
+
+  .logo-section h1 {
+    font-size: 20px;
+  }
+
+  .cards {
+    padding: 20px;
+    gap: 20px;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar ul {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .navbar li {
+    padding: 10px;
+  }
+}
